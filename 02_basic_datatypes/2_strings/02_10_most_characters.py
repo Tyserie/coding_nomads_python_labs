@@ -19,7 +19,6 @@ users1, users2, users3 = input("Please enter three strings: ").split()
 
 
 #Chalenge
-#users1, users2, users3 = input("Please enter three strings: ").split()
 usr1 = len(users1)
 usr2 = len(users2)
 usr3 = len(users3)
@@ -37,9 +36,7 @@ else:
 
 
 
-#print(type(usr1))
-#print(usr2)
-#print(usr3)
+
 
 
 
