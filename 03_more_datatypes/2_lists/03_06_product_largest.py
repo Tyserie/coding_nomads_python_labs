@@ -16,9 +16,10 @@ while count < 10:
     count += 1
     nbrlist.append(numbers)
 nbrlist.sort()
-print(nbrlist)
 result = 0
 for n in nbrlist:
     result += n
+x = len(nbrlist) - 1
+print(nbrlist[x])
 print(result)
 

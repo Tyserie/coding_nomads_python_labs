@@ -15,5 +15,11 @@ for n in list_:
     test += 1
 print(list_)
 
+#solution_2
+test = []
+for n in list_:
+    if n not in test:
+        test.append(n)
+print(test)
 
 
