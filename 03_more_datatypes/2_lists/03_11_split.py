@@ -5,19 +5,24 @@ occurrences.
 
 '''
 inpt_usr = input("Please enter a string: ")
-y = len(inpt_usr)
-x = inpt_usr.split()
-list0 = []
-
-#didnt read the task properly and created something else:(
-#while len(x) > 2:
-#    for i in x[1:y]:
-#        w = x[0]
-#        if len(w) >= len(i):
-#            x.remove(i)
-#        if len(w) < len(i):
-#            x.remove(w)
-#print(x)
-
-#correct solution
-
+c = True
+g = 1
+while g < 6:
+    x = inpt_usr.split()
+    d = len(x)
+    list0 = []
+    dict = {}
+    #g = 1
+    for i in x:
+        temp = 1
+        temp1 = []
+        for e in range(g, d):
+            if i == x[e] and i not in dict:
+                temp += 1
+                temp1 = i
+        len(temp1)
+        #print(len(temp1))
+        if len(temp1) > 0:
+            dict[temp1] = temp
+        g += 1
+print(dict)
