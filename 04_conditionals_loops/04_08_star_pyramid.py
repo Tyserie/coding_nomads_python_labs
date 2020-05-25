@@ -17,3 +17,9 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+n = 5
+
+for row in range(1, n + 1):
+    for colum in range(row):
+        print("*", end=" ")
+    print()
