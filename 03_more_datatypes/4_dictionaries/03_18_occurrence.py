@@ -6,15 +6,22 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
-#usr_inp = input("Please enter a string: ")
-user_input = "hello"
-count = 1
+user_input = input("Please enter a string: ")
+#user_input = "heltlootaptfka"
+lngt = int(len(user_input))
+result = {}
+chckd = []
+x = 1
 for i in user_input:
-    e = user_input[1]
-    chckd = []
+    count = 1
     if i not in chckd:
-        if i == e:
-            count += 1
+        for e in user_input[x:lngt]:
+            if i == e:
+                count += 1
+                chckd.append(i)
+        result[i] = count
+    x += 1
+print(result)
 
 
 
