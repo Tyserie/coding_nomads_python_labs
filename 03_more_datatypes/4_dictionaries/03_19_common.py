@@ -18,7 +18,6 @@ list1 = []
 list2 = []
 dict_3 = {}
 s = 1
-e = len(list1)
 
 for i in dict_1:
     c = i, dict_1[i]
@@ -26,16 +25,14 @@ for i in dict_1:
 for i in dict_2:
     c = i, dict_2[i]
     list1.append(tuple(c))
+e = len(list1)
 for tuples1 in list1:
-    for tuples2 in list1[s:6]:
+    for tuples2 in list1[s:e]:
         if tuples1[0] == tuples2[0]:
-            # print(tuples1)
             cnt_tup = tuples1[1] + tuples2[1]
             dict_3[tuples1[0]] = cnt_tup
-            print(dict_3)
-            # continue
-    if tuples1[0] != tuples2[0] and tuples1[0] not in dict_3:
+    if tuples1[0] != tuples2[0] and tuples1[0] not in dict_3 or tuples1[0] == tuples2[0] and tuples1[0] not in dict_3:
         dict_3[tuples1[0]] = tuples1[1]
-        print(dict_3)
     s += 1
-    # e += 2
+print(dict_3)
+
