@@ -33,7 +33,9 @@ for tuples1 in list1:
             cnt_tup = tuples1[1] + tuples2[1]
             dict_3[tuples1[0]] = cnt_tup
             print(dict_3)
-            continue
-
+            # continue
+    if tuples1[0] != tuples2[0] and tuples1[0] not in dict_3:
+        dict_3[tuples1[0]] = tuples1[1]
+        print(dict_3)
     s += 1
     # e += 2
