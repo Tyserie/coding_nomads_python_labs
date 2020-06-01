@@ -7,3 +7,12 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+strt, end = input("Please enter two numbers: ").split()
+x = 0
+for i in range(int(strt), int(end) + 1):
+    result = x + i
+    x = result
+print(result)
+
+
+
