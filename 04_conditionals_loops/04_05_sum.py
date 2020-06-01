@@ -9,6 +9,8 @@ The sum is: 5050
 '''
 strt, end = input("Please enter two numbers: ").split()
 x = 0
+result = None
+
 for i in range(int(strt), int(end) + 1):
     result = x + i
     x = result
