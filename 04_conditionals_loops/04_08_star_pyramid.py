@@ -17,9 +17,9 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
-n = 5
+usr_inp = int(input("Please chose a number: "))
 
-for row in range(1, n + 1):
-    for colum in range(row):
+for row in range(1, usr_inp + 1):
+    for column in range(row):
         print("*", end=" ")
     print()
