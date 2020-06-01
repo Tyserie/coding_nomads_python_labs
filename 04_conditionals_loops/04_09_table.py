@@ -8,3 +8,14 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+x = []
+for e in range(0, 51):
+    x.append(e)
+strt = 0
+end = 10
+for i in range(0, 5):
+    print(*x[strt:end])
+    strt = end + 1
+    end += 10
+print()
+
