@@ -11,10 +11,7 @@ NOTE: Check out the Python docs and see whether you can come up with a solution,
 
 '''
 input_dict = {"item1": 5, "item2": 6, "item3": 1}
-result_list = []
-sort_orders = sorted(input_dict.items(), key=lambda x: x[1])
 
-for i in sort_orders:
-    x = i[0], i[1]
-    result_list.append(x)
+result_list = sorted(input_dict.items(), key=lambda x: x[1])
 print(result_list)
+
