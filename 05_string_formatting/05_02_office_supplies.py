@@ -25,3 +25,6 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for i in office:
+    print(f"{' '.join(reversed(i['full_name'].split()[0].upper()))} {i['item']}")
