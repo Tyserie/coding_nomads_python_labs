@@ -27,4 +27,4 @@ office = [
 ]
 
 for i in office:
-    print(f"{''.join(i['full_name'].split()[1].upper())}, {''.join(i['full_name'].split()[0])}     {i['item']}")
+    print(f"{''.join(i['full_name'].split()[1].upper())}{',':<2}{''.join(i['full_name'].split()[0]):<13}\t{i['item']}")
