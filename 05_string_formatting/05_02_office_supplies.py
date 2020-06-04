@@ -27,4 +27,4 @@ office = [
 ]
 
 for i in office:
-    print(f"{' '.join(reversed(i['full_name'].split()[0].upper()))} {i['item']}")
+    print(f"{''.join(i['full_name'].split()[1].upper())}, {''.join(i['full_name'].split()[0])}     {i['item']}")
