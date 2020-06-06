@@ -25,6 +25,22 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
-
 for i in office:
-    print(f"{''.join(i['full_name'].split()[1].upper())}{',':<2}{''.join(i['full_name'].split()[0]):<13}\t{i['item']}")
+    last_name_ = i["full_name"].split()
+    last_n_upper = last_name_[1].upper()
+    name_ = i["full_name"].split()
+    name = name_[0]
+    item = i["item"]
+    lst_nm_frst_nm = last_n_upper + ',' + ' ' + name
+    print(f"{lst_nm_frst_nm:<20}\t{item}")
+
+
+
+
+
+
+
+
+
+
+    #print(f"{''.join(i['full_name'].split()[1].upper())}{',':<2}{''.join(i['full_name'].split()[0]):<13}\t{i['item']}")
