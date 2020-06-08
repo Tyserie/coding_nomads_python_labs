@@ -33,14 +33,3 @@ for i in office:
     item = i["item"]
     lst_nm_frst_nm = last_n_upper + ',' + ' ' + name
     print(f"{lst_nm_frst_nm:<20}\t{item}")
-
-
-
-
-
-
-
-
-
-
-    #print(f"{''.join(i['full_name'].split()[1].upper())}{',':<2}{''.join(i['full_name'].split()[0]):<13}\t{i['item']}")
