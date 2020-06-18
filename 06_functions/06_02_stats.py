@@ -12,7 +12,11 @@ def stats(list):
   list_max = max(list)
   list_sum = sum(list)
   list_avr = list_sum / 7
-  print(list_min, list_max, list_sum, list_avr)
+  print(f"list min number is {list_min}\n"
+        f"list max number is {list_max}\n" 
+        f"list sum is {list_sum}\n" 
+        f"list average is {list_avr}"
+        )
 
 # call the function below here
 stats(example_list)
