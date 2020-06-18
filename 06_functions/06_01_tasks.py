@@ -1,9 +1,6 @@
 '''
-
 Write a script that completes the following tasks.
-
 '''
-
 # define a function that determines whether the number is divisible by 4 or 7 and returns a boolean
 def num_div_by(number):
     x = number % 4 == 0
